@@ -9,8 +9,6 @@ github.com/go-gl/glfw/v3.3/glfw v0.0.0-20221017161538-93cebf72946b h1:GgabKamyOY
 github.com/go-gl/glfw/v3.3/glfw v0.0.0-20221017161538-93cebf72946b/go.mod h1:tQ2UAYgL5IevRw8kRxooKSPJfGvJ9fJQFa0TUsXzTg8=
 github.com/hajimehoshi/bitmapfont/v2 v2.2.2 h1:4z08Fk1m3pjtlO7BdoP48u5bp/Y8xmKshf44aCXgYpE=
 github.com/hajimehoshi/bitmapfont/v2 v2.2.2/go.mod h1:Ua/x9Dkz7M9CU4zr1VHWOqGwjKdXbOTRsH7lWfb1Co0=
-github.com/hajimehoshi/ebiten/v2 v2.4.16 h1:vhuMtaB78N2HlNMfImV/SZkDPNJhOxgFrEIm1uh838o=
-github.com/hajimehoshi/ebiten/v2 v2.4.16/go.mod h1:BZcqCU4XHmScUi+lsKexocWcf4offMFwfp8dVGIB/G4=
 github.com/hajimehoshi/ebiten/v2 v2.4.17 h1:0YZgAMJyOodriwI7enBOi71zJ3cBlIOhrUs6voUKOaA=
 github.com/hajimehoshi/ebiten/v2 v2.4.17/go.mod h1:BZcqCU4XHmScUi+lsKexocWcf4offMFwfp8dVGIB/G4=
 github.com/hajimehoshi/file2byteslice v0.0.0-20210813153925-5340248a8f41/go.mod h1:CqqAHp7Dk/AqQiwuhV1yT2334qbA/tFWQW0MD2dGqUE=
@@ -39,8 +37,6 @@ golang.org/x/crypto v0.0.0-20191011191535-87dc89f01550/go.mod h1:yigFU9vqHzYiE8U
 golang.org/x/crypto v0.0.0-20210921155107-089bfa567519/go.mod h1:GvvjBRRGRdwPK5ydBHafDWAxML/pGHZbMvKqRZ5+Abc=
 golang.org/x/exp v0.0.0-20190306152737-a1d7652674e8/go.mod h1:CJ0aWSM057203Lf6IL+f9T1iT9GByDxfZKAQTCR3kQA=
 golang.org/x/exp v0.0.0-20190731235908-ec7cb31e5a56/go.mod h1:JhuoJpWY28nO4Vef9tZUw9qufEGTyX1+7lmHxV5q5G4=
-golang.org/x/exp v0.0.0-20230203172020-98cc5a0785f9 h1:frX3nT9RkKybPnjyI+yvZh6ZucTZatCCEm9D47sZ2zo=
-golang.org/x/exp v0.0.0-20230203172020-98cc5a0785f9/go.mod h1:CxIveKay+FTh1D0yPZemJVgC/95VzuuOLq5Qi4xnoYc=
 golang.org/x/exp/shiny v0.0.0-20230203172020-98cc5a0785f9 h1:R6jtwqCcqbYqo1iAtUmMtBopnGy7aYAN1aWnjCSaHX0=
 golang.org/x/exp/shiny v0.0.0-20230203172020-98cc5a0785f9/go.mod h1:UH99kUObWAZkDnWqppdQe5ZhPYESUw8I0zVV1uWBR+0=
 golang.org/x/image v0.0.0-20190227222117-0694c2d4d067/go.mod h1:kZ7UVZpmo3dzQBMxlp+ypCbDeSB+sBbTgSJuh5dn5js=
