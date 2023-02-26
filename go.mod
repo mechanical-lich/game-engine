@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/go-fonts/liberation v0.2.0
-	github.com/hajimehoshi/ebiten/v2 v2.4.16
+	github.com/hajimehoshi/ebiten/v2 v2.4.17
 	golang.org/x/image v0.3.0
 )
 

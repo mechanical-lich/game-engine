@@ -47,14 +47,16 @@ func (b *BackgroundAudioPlayer) SetActiveSong(i int) error {
 }
 
 func (b *BackgroundAudioPlayer) Update() {
-	if !b.audioPlayers[b.activePlayer].IsPlaying() {
+	if len(b.audioPlayers) > 0 {
+		if !b.audioPlayers[b.activePlayer].IsPlaying() {
 
-		next := b.activePlayer + 1
-		if next >= len(b.audioPlayers) {
-			next = 0
+			next := b.activePlayer + 1
+			if next >= len(b.audioPlayers) {
+				next = 0
+			}
+			fmt.Printf("Switch songs %v \n", next)
+			b.SetActiveSong(next)
 		}
-		fmt.Printf("Switch songs %v \n", next)
-		b.SetActiveSong(next)
 	}
 }
 
