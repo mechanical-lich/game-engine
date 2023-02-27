@@ -1,4 +1,4 @@
-package entity
+package ecs
 
 import (
 	"bufio"
@@ -6,11 +6,9 @@ import (
 	"io"
 	"os"
 	"strings"
-
-	"github.com/mechanical-lich/game-engine/component"
 )
 
-type ComponentAddFunction func(params []string) (component.Component, error)
+type ComponentAddFunction func(params []string) (Component, error)
 
 var blueprints = make(map[string][]string)
 var componentAddFunctions = make(map[string]ComponentAddFunction)
