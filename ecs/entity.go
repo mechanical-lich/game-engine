@@ -1,6 +1,9 @@
 package ecs
 
-import "strings"
+import (
+	"log"
+	"strings"
+)
 
 // Entity - represents an entity which essentially is an array of components built from a blueprint.
 type Entity struct {
@@ -28,14 +31,19 @@ func (entity *Entity) HasComponent(name string) bool {
 }
 
 // HasComponents - takes a comma separated string of component names and returns if entity has all of them.
-func (entity *Entity) HasComponents(names string) bool {
+func (entity *Entity) HasComponents(names ...string) bool {
 	if entity.Components == nil {
 		entity.Components = make(map[string]Component)
 	}
 
-	namesArray := strings.Split(names, ",")
+	if len(names) == 1 {
+		names = strings.Split(names[0], ",")
+		if len(names) > 1 {
+			log.Print("Deprecated use of HasComponents.")
+		}
+	}
 
-	for _, name := range namesArray {
+	for _, name := range names {
 		if entity.Components[name] == nil {
 			return false
 		}
