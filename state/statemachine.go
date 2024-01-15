@@ -10,7 +10,7 @@ type StateMachine struct {
 }
 
 func (s *StateMachine) Update() {
-	if s.currentState >= 0 {
+	if s.currentState >= 0 && len(s.states) > 0 {
 		nextState := s.states[s.currentState].Update()
 		if s.states[s.currentState].Done() {
 			s.PopCurrentState()
@@ -22,7 +22,7 @@ func (s *StateMachine) Update() {
 }
 
 func (s *StateMachine) Draw(screen *ebiten.Image) {
-	if s.currentState >= 0 {
+	if s.currentState >= 0 && len(s.states) > 0 {
 		s.states[s.currentState].Draw(screen)
 	}
 }
