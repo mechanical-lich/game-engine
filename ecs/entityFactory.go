@@ -3,6 +3,7 @@ package ecs
 import (
 	"bufio"
 	"errors"
+	"fmt"
 	"io"
 	"os"
 	"strings"
@@ -72,7 +73,7 @@ func Create(name string) (*Entity, error) {
 				}
 				entity.AddComponent(newComp)
 			} else {
-				return nil, errors.New("no component handler function registered")
+				return nil, fmt.Errorf("no component handler function registered for '%s'", c[0])
 			}
 
 		}

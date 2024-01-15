@@ -9,6 +9,7 @@ import (
 )
 
 var MplusNormalFont font.Face
+var MplusSmallFont font.Face
 
 func LoadDefaultFonts() {
 	tt, err := opentype.Parse(fonts.MPlus1pRegular_ttf)
@@ -19,6 +20,15 @@ func LoadDefaultFonts() {
 	const dpi = 72
 	MplusNormalFont, err = opentype.NewFace(tt, &opentype.FaceOptions{
 		Size:    24,
+		DPI:     dpi,
+		Hinting: font.HintingFull,
+	})
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	MplusSmallFont, err = opentype.NewFace(tt, &opentype.FaceOptions{
+		Size:    16,
 		DPI:     dpi,
 		Hinting: font.HintingFull,
 	})

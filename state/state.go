@@ -6,6 +6,7 @@ import (
 
 // StateInterface - Interface representing a state to be used by the game.
 type StateInterface interface {
-	Update()
+	Update() StateInterface
 	Draw(screen *ebiten.Image)
+	Done() bool
 }

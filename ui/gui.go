@@ -27,7 +27,7 @@ func (g *GUI) Update(s state.StateInterface) {
 func (g *GUI) Draw(screen *ebiten.Image, s state.StateInterface) {
 	g.State.Draw(screen, s)
 
-	g.DrawCursor(screen, s)
+	//g.DrawCursor(screen, s)
 }
 
 func (g *GUI) DrawCursor(screen *ebiten.Image, s state.StateInterface) {
